@@ -26,3 +26,11 @@ let isLoggedIN = true;
 console.log(typeof "Rajat");
 
 
+// Pratice
+let Ename = "Rajat";
+
+const EID = 101;
+
+let ESal = 2500000;
+
+console.log(typeof Ename)
