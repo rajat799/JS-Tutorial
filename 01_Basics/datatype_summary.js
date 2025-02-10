@@ -90,7 +90,7 @@ let userTwo = userOne;
 
 userTwo.email = "wop23@gmail.com";
 
-console.log(userOne.email);
+console.log(userOne.email);  // note: changes in the origininal value also 
 
 console.log(userTwo.email);
 
