@@ -52,11 +52,45 @@ const myFunc = function(){
 
 // Typeof function 
 
-console.log(typeof score);
-console.log(typeof scoreVal);
-console.log(typeof isLoggedIn);
-console.log(typeof outsideTemp);
+// console.log(typeof score);
+// console.log(typeof scoreVal);
+// console.log(typeof isLoggedIn);
+// console.log(typeof outsideTemp);
 
-console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof bigNumber);
+// console.log(typeof userEmail);
+// console.log(typeof id);
+// console.log(typeof bigNumber);
+
+// ------------------------------------------------------------------------------------
+
+// 10th video
+
+// Stack and heap memory in JS
+
+// 1) stack (used in Primitive datatype) ---------- copy of the value
+// 2) heap (used in non primitive datatype) ---------- reference of original value 
+
+// in primitive 
+let YTname = "WOPChannel"
+
+let anothername = YTname
+anothername = "RajatMCoder"
+
+console.log(YTname);
+console.log(anothername);
+
+// in non primitive
+
+let userOne = {
+    email: "rajat@gmail.com",
+    age : 20
+}
+
+let userTwo = userOne;
+
+userTwo.email = "wop23@gmail.com";
+
+console.log(userOne.email);
+
+console.log(userTwo.email);
+
