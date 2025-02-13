@@ -1,27 +1,25 @@
-const string1 = "This is string";
-const string2 = 'This is also string';
-const string3 = `yet another string primitive`;
+const newarr = new Array(1, 2, 3, 4,5);
 
-// string constructor (objects)
-const string4 = new String("A string object");
+console.log(newarr);
+newarr.push(6);
 
-// character access
-console.log("hello");
+console.log(newarr);
+
+const strarr = newarr.join();
+
+console.log(typeof strarr);
+console.log(strarr);
 
 
-// comparing strings
+console.log(newarr);
 
-const a = 1;
-const b = 5;
+const arr1 = newarr.splice(4)
+console.log(newarr);
 
-if(a>b){
-    console.log(`${a} is greater than ${b}`);
-    
-}else if(b>a){
-    console.log(`${b} is greater than ${a}`);
-    
-}
-else{
-    console.log(`${a} and ${b} are equal`);
-    
-}
+console.log(arr1);
+
+
+const arr2 = newarr.slice(2)
+console.log(newarr);
+
+console.log(arr2);
