@@ -21,7 +21,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullName.userFullName.firstName);
+// console.log(regularUser.fullName.userFullName.firstName);
 
 
 // mearging of 2 objects
@@ -34,16 +34,42 @@ const obj2 = {3:"c", 4:"d"};
 // const obj4 = Object.assign({}, obj1, obj2);
 
 const obj3 = {...obj1, ...obj2};  // spread consept
-console.log(obj3);
+// console.log(obj3);
 // console.log(obj4);
 
 // imp
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedin'));  // to check if the property is present of perticular object
+// console.log(tinderUser.hasOwnProperty('isLoggedin'));  // to check if the property is present of perticular object
 
 
+/// -------------------------Object destructuring---------------------------
 
+const course = {
+    coursename: "A2Z JS Course",
+    price: "99",
+    courseInstructor: "rajat"
+}
+
+// console.log(course.courseInstructor); 
+
+// cleaner method (destructuring in {})
+
+const {courseInstructor: instructor} = course
+
+console.log(instructor);
+
+// JSON file format
+
+/*
+
+{
+    "name":"rajay".
+    "courseNamer":"OS",
+    "price":"free"
+}
+
+*/
