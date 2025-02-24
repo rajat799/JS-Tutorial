@@ -1,13 +1,13 @@
-let myObj = {
-    name:"rajat",
-    age:20,
-    branch:"BCA"
+function user(name){
+    console.log(`username: ${name}`);
 }
+user('rajat');
 
-let {name, age} = myObj;
+(function user1(name){
+    console.log(`username: ${name}`);  
+})('rajat');
 
-console.log(name);
-console.log(myObj.branch);
-
-
-
+( (name) => {
+    console.log(`username: ${name}`);
+    
+})('rajat');
