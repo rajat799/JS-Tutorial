@@ -1,13 +1,19 @@
-function user(name){
-    console.log(`username: ${name}`);
+const arr1 = ['rajat', 'raju', 'sidd'];
+console.log(arr1);
+
+const myObjects = {
+    name: "rajat",
+    age: 20,
+    gender: "male",
+    course: "BCA"
 }
-user('rajat');
 
-(function user1(name){
-    console.log(`username: ${name}`);  
-})('rajat');
+console.log(myObjects.age);
 
-( (name) => {
-    console.log(`username: ${name}`);
+
+const myFunc = function(){
+    console.log("hello");
     
-})('rajat');
+}
+
+myFunc();
