@@ -1,2 +1,3 @@
 # JS-Tutorial
-This is to learn Javascript from scratch 
+
+This is to learn Javascript from scratch
