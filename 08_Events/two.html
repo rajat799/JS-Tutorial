@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rajat Malapur</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayRajat = function(){
+        console.log('Rajat');
+    }
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS Series";
+    }
+
+    // setTimeout(sayRajat, 2000)
+    // setTimeout(changeText, 5000); // after 5 sec h1 text will chage in best JS Series  
+    
+    const changeME = setTimeout(changeText, 5000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeME);
+        console.log("Stopped");
+    })
+</script>
+</html>
