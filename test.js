@@ -1,19 +1,41 @@
-const arr1 = ['rajat', 'raju', 'sidd'];
-console.log(arr1);
+const userName = new String("Rajat");
 
-const myObjects = {
-    name: "rajat",
-    age: 20,
-    gender: "male",
-    course: "BCA"
-}
+console.log(userName);
 
-console.log(myObjects.age);
+console.log(userName.toString());
+console.log(userName.valueOf());
+console.log(userName.length);
+console.log(userName.toUpperCase())
 
+console.log(userName.charAt(3))
+console.log(userName.indexOf('at'));
 
-const myFunc = function(){
-    console.log("hello");
-    
-}
+// substring
 
-myFunc();
+const newString = userName.substring(0, 3);
+console.log(newString);
+
+//slice
+
+const slicedStr = userName.slice(1, 3);
+console.log(slicedStr);
+
+// trim 
+const myName = " Rajat  ";
+console.log(myName);
+
+console.log(myName.trim());
+
+// replace 
+
+const url = "https://rajat.com/rajat%20malapur";
+
+console.log(url.replace("%20", "-"));
+
+// includes 
+console.log(url.includes("rajat"));
+
+// SPLIT
+
+const email = "rajat-malapur-@gmail-com";
+console.log(email.split("-"))
